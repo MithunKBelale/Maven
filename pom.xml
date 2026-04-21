@@ -2,10 +2,17 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.example.app</groupId>
+ HEAD
   <artifactId>demo-app1</artifactId>
   <packaging>jar</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>demo-app1</name>
+
+  <artifactId>demo-app</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>demo-app</name>
+ 9b3df62bf84e13cdf02bcaa51dabd87762858b14
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -39,7 +46,11 @@
 
   </dependencies>
 <build>
+<<<<<<< HEAD
 <plugins>
+=======
+    <plugins>
+>>>>>>> 9b3df62bf84e13cdf02bcaa51dabd87762858b14
 
         <!-- Compiler Plugin -->
         <plugin>
@@ -47,11 +58,27 @@
             <artifactId>maven-compiler-plugin</artifactId>
             <version>3.11.0</version>
             <configuration>
+<<<<<<< HEAD
                 <source>21</source>
                 <target>21</target>
             </configuration>
         </plugin>
 
+=======
+                <source>17</source>
+                <target>17</target>
+            </configuration>
+        </plugin>
+
+    
+    
+        <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>exec-maven-plugin</artifactId>
+            <version>3.1.0</version>
+        </plugin>
+    
+>>>>>>> 9b3df62bf84e13cdf02bcaa51dabd87762858b14
         <!-- Test Plugin -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -62,4 +89,7 @@
     </plugins>
 </build>
 </project>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9b3df62bf84e13cdf02bcaa51dabd87762858b14
